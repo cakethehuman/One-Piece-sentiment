@@ -31,7 +31,7 @@ def predict():
         case "LABEL_1":
             output = ":yellow[*Meh*] :meh:"
         case "LABEL_0":
-            output = ":red[*Not real*] :angry:"
+            output = ":red[*Nah you hater??*] :angry:"
         case _:
             output = 'error'
 
