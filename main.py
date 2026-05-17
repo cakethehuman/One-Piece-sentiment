@@ -29,9 +29,9 @@ def predict():
         case "LABEL_2":
             output = ":green[*Bro likes it*] :sunglasses:"
         case "LABEL_1":
-            output = "Meh :meh:"
+            output = ":yellow[*Meh*] :meh:"
         case "LABEL_0":
-            output = ":red[Not real] :angry:"
+            output = ":red[*Not real*] :angry:"
         case _:
             output = 'error'
 
@@ -40,6 +40,7 @@ def predict():
 # Display the input back to the user
 if st.button("Submit"):
     output = predict()
-    st.write(f"vibe : {output}")
+    if(output is not None):
+        st.write(f"vibe : {output}")
     
     
