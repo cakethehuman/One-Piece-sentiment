@@ -3,7 +3,7 @@ from transformers import pipeline
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
-    st.image("assets\whiteB.jpg", width=300, caption="The legend")
+    st.image("./assets/whiteB.jpg", width=300, caption="The legend")
 
 # Add a title to your app
 st.title("One piece vibe check")
